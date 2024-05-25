@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.biacorp.ru/itm23/service-back">
+  <a href="https://github.com/usalko/test11">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -15,12 +15,11 @@
     <br />
     <a href="https://test11.qstand.art">View demo</a>
     ·
-    <a href="https://github.com/usalko/test11/issues/new?labels=bug&template=bug-report---.md">Новый баг</a>
+    <a href="https://github.com/usalko/test11/issues/new?labels=bug&template=bug-report---.md">New bugreport</a>
     ·
-    <a href="https://github.com/usalko/test11/issues/new?labels=enhancement&template=feature-request---.md">Новая фича</a>
+    <a href="https://github.com/usalko/test11/issues/new?labels=enhancement&template=feature-request---.md">New feature request</a>
   </p>
 </div>
-
 
 
 <!-- TABLE OF CONTENTS -->
@@ -28,23 +27,24 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Сводная информация о проекте</a>
+      <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Стек технологий</a></li>
+        <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Начало разработки</a>
+      <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Пререквизиты</a></li>
-        <li><a href="#installation">Установка</a></li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Использование</a></li>
-    <li><a href="#roadmap">Дорожная карта</a></li>
-    <li><a href="#contributing">Вклад</a></li>
-    <li><a href="#contact">Контакты</a></li>
-    <li><a href="#acknowledgments">Ссылки</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -185,10 +185,7 @@ but I would recommend using something like dbeaver
 <a name="usage"></a> 
 ## Usage
 
-Разворачивание на dev и pre-prod стендах осуществляется через [ci встроенный в github](https://github.com/usalko/test11/pipelines).
-
-Полный список переменных окружения, можно посмотреть в [документации](documentation/index.md).
-
+Just try to pull docker image usalko/test11, and initialize airflow.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,11 +193,11 @@ but I would recommend using something like dbeaver
 
 <!-- ROADMAP -->
 <a name="roadmap"></a>
-## Дорожная карта
+## Roadmap
 
-- [ ] Создание прототипа для запуска пользовательского тестирования
+- [ ] Creating a prototype to run user testing
 
-См. [открытые задачи](https://github.biacorp.ru/itm32/service-front/issues) для полного списка предлагаемых фич (и найденых дефектов/багов).
+See [open issues](https://github.com/usalko/test11/issues) for a complete list of proposed features (and defects/bugs found).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,27 +205,27 @@ but I would recommend using something like dbeaver
 
 <!-- CONTRIBUTING -->
 <a name="contributing"></a>
-## Вклад
+## Contributions
 
-Вклад в разработку, это то что делает наше небольшое сообщество разработчиков, таким потрясающим местом для обучения, вдохновления и создания нового смысла и значения для наших пользователей. Все ваши вклады  **высоко ценятся**.
+Contribution to development is what makes our developer community such an incredible place to learn, inspire, and create new meaning and meaning for our users. All your contributions are **highly appreciated**.
 
-Разработка осуществляется в соответствии с базовыми стилевыми соглашениями по оформлению кода (pep8), если у вас есть предложения по улучшению процесса разработки или кода, делайте форк проекта и кидайте merge request или просто [заводите задачи](https://github.biacorp.ru/itm32/service-front/issues) с тегом "enhancement".
-Не забудьте кинуть звездочку на проект! Спасибо, спасибо!
+Development is carried out in accordance with the basic style conventions for coding (pep8), if you have suggestions for improving the development process or code, fork the project and throw a merge request or simply [create tasks](https://github.com/usalko /test11/issues) with the tag "enhancement".
+Don't forget to star the project! Thank you, thank you!
 
-1. Форк проекта
-2. Создай свою фичу (ветку) (`git checkout -b feature/AmazingFeature`)
-3. Комить изменения (`git commit -m 'Add some AmazingFeature'`)
-4. Сделай пуш бранча (`git push origin feature/AmazingFeature`)
-5. Открой пул реквест
+1. Fork of the repository
+2. Create your own feature (branch) (`git checkout -b feature/AmazingFeature`)
+3. Commit the changes (`git commit -m 'Add some AmazingFeature'`)
+4. Make a brunch push (`git push origin feature/AmazingFeature`)
+5. Open a pull request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
 <a name="contact"></a>
-## Контакты
+## Contact
 
-Ссылка на проект: [https://github.biacorp.ru/itm32/service-back](https://github.biacorp.ru/itm32/service-back)
+Reference to the repository: [https://github.com/usalko/test11](https://github.com/usalko/test11)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -236,9 +233,9 @@ but I would recommend using something like dbeaver
 
 <!-- ACKNOWLEDGMENTS -->
 <a name="acknowledgments"></a>
-## Ссылки
+## Acknowledgments
 
-Список полезных ссылок
+List of useful links
 
 * [PEP8 reference](https://peps.python.org/pep-0008/)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
