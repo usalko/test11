@@ -10,7 +10,7 @@
   <p align="center">
     Response to the question: [Fast API + Apache Airflow in Docker](https://stackoverflow.com/questions/69219633/fast-api-apache-airflow-in-docker)
     <br />
-    <a href="https://github.com/usalko/test11/-/blob/dev/documentation/index.md?ref_type=heads"><strong>Просмотр документов »</strong></a>
+    <a href="https://github.com/usalko/test11/-/blob/dev/documentation/index.md?ref_type=heads"><strong>View documentation »</strong></a>
     <br />
     <br />
     <a href="https://test11.qstand.art">View demo</a>
@@ -53,7 +53,7 @@
 <a name="about-the-project"></a> 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://service.biacorp.ru)
+[![Product Name Screen Shot][product-screenshot]](https://test11.qstand.art)
 
 A prototype "Fast API + Apache Airflow in Docker".
 
