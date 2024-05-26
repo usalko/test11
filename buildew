@@ -101,16 +101,10 @@ fi
 
 #========================================== RUN TOOLS =============================================
 
-if [ "$COMMAND" == "tests" ] || [ "$COMMAND" == "test" ]; then
-    echo Run manage script service/manage.py test service/unit_tests "$@"
+if [ "$COMMAND" == "airflow" ] || [ "$COMMAND" == "air" ]; then
+    echo Run airflow cli: .venv/bin/airflow "$@"
     # Sample: ./buildew manage loaddata app_moods/fixtures/geometry_shapes.yaml
-    .venv/bin/python3 service/manage.py test service/unit_tests "$@"
-fi
-
-if [ "$COMMAND" == "service" ]; then
-    echo Run manage script service/manage.py runserver "$@"
-    # Sample: ./buildew manage loaddata app_moods/fixtures/geometry_shapes.yaml
-    .venv/bin/python3 service/manage.py runserver "$@"
+    .venv/bin/airflow "$@"
 fi
 
 if [ "$COMMAND" == "front" ]; then
@@ -624,6 +618,6 @@ if [ "$COMMAND" == "services" ]; then
 fi
 
 # =================================================================================================
-AVAILABLE_COMMANDS="run build up start stop down finish restart manage tests service front redeps renew renew-front renew-back clean log logs publish certbot-test-run certbot-run certbot-renew dump upgrade-db save-db-structure-as-png tidy"
+AVAILABLE_COMMANDS="run build up start stop down finish restart airflow front redeps renew renew-front renew-back clean log logs publish certbot-test-run certbot-run certbot-renew dump upgrade-db save-db-structure-as-png tidy"
 echo ''
 [[ $AVAILABLE_COMMANDS =~ (^| )$COMMAND($| ) ]] && echo 'Ok' || echo 'Unknown command: ' "$COMMAND" && echo 'Available commands are: ' "$AVAILABLE_COMMANDS"

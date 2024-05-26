@@ -5,4 +5,5 @@ from os import execvp
 class TestListDags(TestCase):
     
     def test1(self):
-        execvp('airflow dags --list')
+        #TODO: initialize database before tests.
+        execvp('.venv/bin/airflow', ['dags', 'list'])
