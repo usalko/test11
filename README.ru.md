@@ -52,12 +52,12 @@
 <a name="about-the-project"></a> 
 ## Сводная информация о проекте
 
-[![Product Name Screen Shot][product-screenshot]](https://cargo.biacorp.ru)
+[![Product Name Screen Shot][product-screenshot]](https://test11.qstand.art)
 
-Проект бэкенда для прототипа "BIA Грузоотправитель" предоставляет АПИ для веб и мобильного приложений, а также обеспечивает интеграцию со сторонними сервисами (телеграмм, traffic.online)
+Прототип "Fast API + Apache Airflow in Docker".
 
-Цели создания прототипа "BIA Грузоотправитель":
-* Решение позволяющее в едином окне вести реестр заявок, подбирать исполнителей по заданным параметрам, отправлять заявки на биржи и отслеживать статус исполнения заказов
+Цели создания прототипа "Fast API + Apache Airflow in Docker":
+* Демонстрация навыков
 
 <p align="right">(<a href="#readme-top">назад наверх</a>)</p>
 
@@ -67,10 +67,8 @@
 
 Django, Postgres, Kafka, Redis.
 
-* [Django][Django-url]
-* [Postgres][Postgres-url]
-* [Kafka][Kafka-url]
-* [Redis][Redis-url]
+* [FastAPI][FastAPI-url]
+* [Airflow][Airflow-url]
 
 
 <p align="right">(<a href="#readme-top">назад наверх</a>)</p>
@@ -143,7 +141,6 @@ CHAT_BOT_TOKEN=000000000:dwkLKNewdnwbuhbsaKJBDSD11enka
 
 делать при рабочем docker compose!
 
-
 ```
 docker compose exec -it keeper bash
 ```
@@ -186,10 +183,7 @@ docker compose exec -it pg psql -U cargo -d cargo
 <a name="usage"></a> 
 ## Использование
 
-Разворачивание на dev и pre-prod стендах осуществляется через [ci встроенный в gitlab](https://gitlab.biacorp.ru/itm23/cargo-back/pipelines).
-
-Полный список переменных окружения, можно посмотреть в [документации](documentation/index.md).
-
+Попробуйте вытянуть готовый к использованию образ image usalko/test11 и пройти инициализацию airflow.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -201,7 +195,7 @@ docker compose exec -it pg psql -U cargo -d cargo
 
 - [ ] Создание прототипа для запуска пользовательского тестирования
 
-См. [открытые задачи](https://gitlab.biacorp.ru/itm32/cargo-front/issues) для полного списка предлагаемых фич (и найденых дефектов/багов).
+См. [открытые задачи](https://github.com/usalko/test11/issues) для полного списка предлагаемых фич (и найденых дефектов/багов).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -229,7 +223,7 @@ docker compose exec -it pg psql -U cargo -d cargo
 <a name="contact"></a>
 ## Контакты
 
-Ссылка на проект: [https://gitlab.biacorp.ru/itm32/cargo-back](https://gitlab.biacorp.ru/itm32/cargo-back)
+Ссылка на проект: [https://github.com/usalko/test11](https://github.com/usalko/test11)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -243,7 +237,6 @@ docker compose exec -it pg psql -U cargo -d cargo
 
 * [PEP8 reference](https://peps.python.org/pep-0008/)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [GitLab Flavored Markdown (GLFM)](https://docs.gitlab.com/ee/user/markdown.html)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -251,8 +244,6 @@ docker compose exec -it pg psql -U cargo -d cargo
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [product-screenshot]: images/screenshot.png
-[Django-url]: https://docs.djangoproject.com/en/4.2/
-[Postgres-url]: https://www.postgresql.org/docs/15/index.html
-[Kafka-url]: https://kafka.apache.org/documentation
-[Redis-url]: https://redis.io/
+[FastAPI-url]: https://fastapi.tiangolo.com/tutorial/
+[Airflow-url]: https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html
 

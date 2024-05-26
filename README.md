@@ -68,10 +68,8 @@ Goals of making prototype "Fast API + Apache Airflow in Docker":
 
 FastAPI, Apache Airflow.
 
-* [Django][Django-url]
-* [Postgres][Postgres-url]
-* [Kafka][Kafka-url]
-* [Redis][Redis-url]
+* [FastAPI][FastAPI-url]
+* [Airflow][Airflow-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -239,7 +237,6 @@ List of useful links
 
 * [PEP8 reference](https://peps.python.org/pep-0008/)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [github Flavored Markdown (GLFM)](https://docs.github.com/ee/user/markdown.html)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -247,8 +244,6 @@ List of useful links
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [product-screenshot]: images/screenshot.png
-[Django-url]: https://docs.djangoproject.com/en/4.2/
-[Postgres-url]: https://www.postgresql.org/docs/15/index.html
-[Kafka-url]: https://kafka.apache.org/documentation
-[Redis-url]: https://redis.io/
+[FastAPI-url]: https://fastapi.tiangolo.com/tutorial/
+[Airflow-url]: https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html
 
