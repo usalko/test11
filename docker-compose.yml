@@ -40,8 +40,6 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-      # extra_hosts:
-      #   nexus.bia-tech.ru: 10.210.90.10
     volumes:
       - '.:/home/web/app'
       - type: bind
@@ -58,3 +56,21 @@ services:
     entrypoint: ./bin/dockerize -wait tcp://pg:5432 -timeout 60s
     command: ./bin/start-gunicorn.sh
 
+  airflow:
+    <<: *containers-common
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      # extra_hosts:
+      #   nexus.bia-tech.ru: 10.210.90.10
+    volumes:
+      - '.:/home/web/app'
+      - type: bind
+        source: .history/test11/.bash_history
+        target: /home/web/.bash_history
+    env_file:
+      - .env
+    links:
+      - pg
+    depends_on:
+      - pg

@@ -1,0 +1,1 @@
+from service.src.v1.modules.schemas.module_stat import *
