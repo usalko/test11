@@ -548,16 +548,6 @@ if [ "$COMMAND" == "save-db-structure-as-png" ]; then
     rm -fr "$TMP_FOLDER"
 fi
 
-#========================================== SERVICE MODULE COMMANDS ===============================
-if [ "$COMMAND" == "tidy" ]; then
-    echo Run go mod tidy in service folder
-    CD=$PWD
-    cd service
-    go get github.com/usalko/s2d3
-    go mod tidy
-    cd $CD
-fi
-
 #========================================== LOGS ==================================================
 if [ "$COMMAND" == "log" ]; then
     if [ "$*" == "" ]; then
