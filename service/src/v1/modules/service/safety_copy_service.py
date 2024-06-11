@@ -15,7 +15,7 @@ def _check_airflow_healthy_condition(health_check_timeout: float) -> bool:
     return True
 
 
-def safety_copy_service(*, tmp_folder: str, target_folder: str, stream: BytesIO, file_name: str) -> bool:
+def safety_copy_service(tmp_folder: str, target_folder: str, stream: BytesIO, file_name: str) -> bool:
     '''Safety copy or rollback folder content.'''
     target_file_name = Path(target_folder, f'{file_name}')
 

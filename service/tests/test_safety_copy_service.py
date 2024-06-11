@@ -1,7 +1,9 @@
-from io import open
+from io import BytesIO
 from pathlib import Path
 
-from .basic_test_case import BasicTestCase
+from src.v1 import safety_copy_service
+
+from .basic_test_case import *
 from .utils import *
 
 TAG = Path(__file__).name
@@ -33,7 +35,7 @@ t1 = BashOperator(
 '''
 
 
-class TestListDags(BasicTestCase):
+class TestSafetyCopy(BasicTestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -52,14 +54,26 @@ class TestListDags(BasicTestCase):
         self._cleanup_dags_folder()
         return super().setUp()
 
-    def test_empty_dags_folder(self):
+    def test_copy_right_dag(self):
         real_dags = self._dags_list(TAG)
         self.assertEqual(len(real_dags), 0)
 
-    def test_simple_dag(self):
-
-        with open(str(Path(DAGS_FOLDER, 'hello_world_dag.py')), 'w') as writer:
-            writer.write(HELLO_WORLD_DAG)
+        safety_copy_service(
+            '/tmp', DAGS_FOLDER,
+            BytesIO(HELLO_WORLD_DAG.encode('utf-8')), 'hello_world_dag.py',
+        )
 
         real_dags = self._dags_list(TAG)
         self.assertEqual(len(real_dags), 1)
+
+    def test_copy_wrong_dag(self):
+        real_dags = self._dags_list(TAG)
+        self.assertEqual(len(real_dags), 0)
+
+        safety_copy_service(
+            '/tmp', DAGS_FOLDER,
+            BytesIO('haha!!!'.encode('utf-8')), 'hello_world_dag.py',
+        )
+
+        real_dags = self._dags_list(TAG)
+        self.assertEqual(len(real_dags), 0)
