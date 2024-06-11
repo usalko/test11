@@ -1,2 +1,2 @@
-from .safety_copy import *
-from .search_modules import *
+from .safety_copy_service import *
+from .search_modules_service import *
